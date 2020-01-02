@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="timesheetauto.CompanyProfile">
+        <methods>
+          <include name="CompanyProfileSaveButtonTest"/>
+          <include name="DetailButtonTest"/>
+          <include name="setUp"/>
+          <include name="CompanyInfoFieldsTest"/>
+          <include name="CompanyProfileCancelButtonTest"/>
+          <include name="CompanyInfoCancelButtonTest"/>
+          <include name="EditButtonTest"/>
+          <include name="CompanyInfoSaveButtonTest"/>
+        </methods>
+      </class> <!-- timesheetauto.CompanyProfile -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

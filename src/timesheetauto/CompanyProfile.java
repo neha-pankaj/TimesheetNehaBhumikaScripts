@@ -20,7 +20,7 @@ public class CompanyProfile {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Neeraj\\Desktop\\Neha workspace\\Timesheetautomation\\Chrome\\chrome\\chromedriver.exe");
+				"C:\\Users\\Neeraj\\Desktop\\Neha workspace\\JetliTransfer\\chrome\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		driver.get("https://1wayit.mydsr.co.in/");
