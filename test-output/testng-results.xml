@@ -1,170 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="7" failed="0" total="7" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="327" started-at="2020-01-03T06:28:50Z" finished-at="2020-01-03T06:28:50Z">
+  <suite name="Default suite" duration-ms="8382" started-at="2020-01-03T08:53:01Z" finished-at="2020-01-03T08:53:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="327" started-at="2020-01-03T06:28:50Z" finished-at="2020-01-03T06:28:50Z">
-      <class name="timesheetauto.CompanyProfile">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="initialize" is-config="true" duration-ms="5" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
+    <test name="Default test" duration-ms="8382" started-at="2020-01-03T08:53:01Z" finished-at="2020-01-03T08:53:09Z">
+      <class name="timesheetauto.LoginPage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:timesheetauto.LoginPage@50cbc42f]" name="initialize" is-config="true" duration-ms="0" started-at="2020-01-03T14:23:01Z" finished-at="2020-01-03T14:23:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="setUp" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Users\neerajtesting\git\MyRepos\Timesheet\ChromeDriver2.36\chromedriver.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\neerajtesting\git\MyRepos\Timesheet\ChromeDriver2.36\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
-	at timesheetauto.CompanyProfile.setUp(CompanyProfile.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:timesheetauto.LoginPage@50cbc42f]" name="setUp" is-config="true" duration-ms="7261" started-at="2020-01-03T14:23:01Z" finished-at="2020-01-03T14:23:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="DetailButtonTest()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="DetailButtonTest" duration-ms="13" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
+        <test-method status="PASS" signature="homePageLoadTest()[pri:0, instance:timesheetauto.LoginPage@50cbc42f]" name="homePageLoadTest" duration-ms="10" started-at="2020-01-03T14:23:08Z" finished-at="2020-01-03T14:23:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DetailButtonTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="initialize()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="initialize" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="SKIP" signature="EditButtonTest()[pri:1, instance:timesheetauto.CompanyProfile@1efbd816]" name="EditButtonTest" duration-ms="1" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditButtonTest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="setUp" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
+        </test-method> <!-- homePageLoadTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:timesheetauto.LoginPage@50cbc42f]" name="tearDown" is-config="true" duration-ms="1101" started-at="2020-01-03T14:23:08Z" finished-at="2020-01-03T14:23:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="initialize()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="initialize" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="setUp" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="CompanyInfoSaveButtonTest()[pri:2, instance:timesheetauto.CompanyProfile@1efbd816]" name="CompanyInfoSaveButtonTest" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CompanyInfoSaveButtonTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="setUp" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="initialize()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="initialize" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="SKIP" signature="CompanyProfileSaveButtonTest()[pri:3, instance:timesheetauto.CompanyProfile@1efbd816]" name="CompanyProfileSaveButtonTest" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CompanyProfileSaveButtonTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="initialize()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="initialize" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="setUp" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="CompanyInfoCancelButtonTest()[pri:4, instance:timesheetauto.CompanyProfile@1efbd816]" name="CompanyInfoCancelButtonTest" duration-ms="1" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CompanyInfoCancelButtonTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="initialize()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="initialize" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="setUp" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="CompanyProfileCancelButtonTest()[pri:5, instance:timesheetauto.CompanyProfile@1efbd816]" name="CompanyProfileCancelButtonTest" duration-ms="4" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CompanyProfileCancelButtonTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="initialize()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="initialize" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="setUp" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="CompanyInfoFieldsTest()[pri:6, instance:timesheetauto.CompanyProfile@1efbd816]" name="CompanyInfoFieldsTest" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CompanyInfoFieldsTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:timesheetauto.CompanyProfile@1efbd816]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-03T11:58:50Z" finished-at="2020-01-03T11:58:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- timesheetauto.CompanyProfile -->
+      </class> <!-- timesheetauto.LoginPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
