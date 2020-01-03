@@ -20,13 +20,13 @@ public class CompanyProfile {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Neeraj\\Desktop\\Neha workspace\\JetliTransfer\\chrome\\chromedriver.exe");
+				"C:\\Users\\neerajtesting\\git\\MyRepos\\Timesheet\\ChromeDriver2.36\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		driver.get("https://1wayit.mydsr.co.in/");
 		driver.manage().window().maximize();
-		driver.findElement(By.id("username")).sendKeys("admin");
-		driver.findElement(By.id("password")).sendKeys("admin@!786");
+		driver.findElement(By.id("username")).sendKeys("Neeraj");
+		driver.findElement(By.id("password")).sendKeys("123");
 		driver.findElement(By.id("submit")).click();
 		driver.findElement(By.xpath("//span[contains(text(),'Company Profile')]")).click();
 	}
