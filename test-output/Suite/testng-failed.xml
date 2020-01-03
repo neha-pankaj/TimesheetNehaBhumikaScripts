@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
-    <classes>
-      <class name="timesheetauto.LoginPage"/>
-    </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Failed suite [Default suite] -->
-=======
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
@@ -37,4 +28,3 @@
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
->>>>>>> 02473ef9129a675d72b0c7e4c8bc5d890c79647f
