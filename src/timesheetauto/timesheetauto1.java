@@ -9,7 +9,7 @@ public class timesheetauto1 {
 	WebDriver driver;
 	@BeforeMethod
 	  public void verifyHomepageTitle() {
-		  System.setProperty("webdriver.chrome.driver","C:\\Users\\Neeraj\\Desktop\\Neha workspace\\Timesheetautomation\\Chrome\\chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver","C:\\Users\\neerajtesting\\git\\MyRepos\\Timesheet\\ChromeDriver2.36\\chromedriver.exe");
 		  driver = new ChromeDriver();
 			System.out.println("Before");
 	  }

@@ -19,7 +19,7 @@ public class LoginPage {
 	@BeforeMethod
 	public void setUp() throws Exception
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\neerajtesting\\Desktop\\workspace\\Timesheet\\ChromeDriver2.36\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\neerajtesting\\git\\MyRepos\\Timesheet\\ChromeDriver2.36\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		driver.get("https://1wayit.mydsr.co.in/");
