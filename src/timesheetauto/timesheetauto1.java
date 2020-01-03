@@ -62,5 +62,11 @@ public class timesheetauto1 extends BaseClass {
 				}
 	    		  driver.findElement(By.xpath("//*[@id='companyPhoneNumber']")).sendKeys("gfsfs*&&");
 	    		  Assert.assertEquals(b, true);
-	
+	}
+	@Test
+	  public void VerifyZipCodefield () {
+		System.out.println("test");
+		
+		
+	}
 	}
