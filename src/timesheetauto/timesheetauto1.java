@@ -7,11 +7,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 
-public class timesheetauto1 {
+public class timesheetauto1 extends BaseClass {
 	WebDriver driver;
 	    @BeforeMethod
 	    public void verifyHomepageTitle() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Neeraj\\Desktop\\Neha workspace\\Timesheetautomation\\Chrome\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://1wayit.mydsr.co.in/");
 		driver.manage().window().maximize();
@@ -32,11 +31,36 @@ public class timesheetauto1 {
 		System.out.println(ErrorMsgCphone);
 		String ErrorMsgCphone1=driver.findElement(By.xpath("//*[@id='CompanyInfo']/div[2]/div[1]/div/label[2]")).getText();
 		Assert.assertEquals(ErrorMsgCphone1, ErrorMsgCphone, "msg");
-		System.out.println("bvfchdvf");
-		System.out.println("bvfch");
-		System.out.println("bvfch2");
-		System.out.println("bvfch3");
-		
+		driver.findElement(By.xpath("//*[@id='companyName']")).clear();
+		driver.findElement(By.xpath("//*[@id='submit']")).click();
+		String ErrorMsgCName=driver.findElement(By.xpath("//*[@id='CompanyInfo']/div[1]/div[1]/div/label[2]")).getText();
+		System.out.println(ErrorMsgCphone);
+		String ErrorMsgCName1=driver.findElement(By.xpath("//*[@id='CompanyInfo']/div[1]/div[1]/div/label[2]")).getText();
+		Assert.assertEquals(ErrorMsgCName1, ErrorMsgCName, "msg1");
 	}
+	@Test
+	  public void VerifyCompanyPhnumfield () {
+		  driver.findElement(By.xpath("//*[@id='alllisting']/div/table/tbody/tr[1]/td[5]/div/button")).click();
+	      driver.findElement(By.xpath("//a[@href='https://1wayit.mydsr.co.in/timesheet_report/edit/1']")).click();
+	      
+	      boolean b;
+	    		  try {
+	    			  driver.findElement(By.xpath("//*[@id='companyPhoneNumber']")).clear();
+	    			  driver.findElement(By.xpath("//*[@id='companyPhoneNumber']")).sendKeys("fjhfjhfhhjfjh()*(*");
+	    			  String val=driver.findElement(By.xpath("//*[@id='companyPhoneNumber']")).getAttribute("value");
+	    			  if(val.isEmpty())
+	    			  {
+	    				  driver.findElement(By.xpath("jhgjhjgj")).clear();
+	    			  }
+	    			  System.out.println(val);
+	    			  System.out.println("try");
+	    			  Thread.sleep(5000);
+	    			  b=false;
+				} catch (Exception e) {
+					System.out.println("catch");
+					b=true;
+				}
+	    		  driver.findElement(By.xpath("//*[@id='companyPhoneNumber']")).sendKeys("gfsfs*&&");
+	    		  Assert.assertEquals(b, true);
 	
 	}

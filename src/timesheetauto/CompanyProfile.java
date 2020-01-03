@@ -12,15 +12,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 
-public class CompanyProfile {
+public class CompanyProfile extends BaseClass {
 
 	WebDriver driver;
-	//ExtentTest test1;
-
 	@BeforeMethod
 	public void setUp() throws Exception {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\neerajtesting\\git\\MyRepos\\Timesheet\\ChromeDriver2.36\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		driver.get("https://1wayit.mydsr.co.in/");

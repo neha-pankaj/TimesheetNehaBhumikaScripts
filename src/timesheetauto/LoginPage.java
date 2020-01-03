@@ -14,12 +14,11 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 
-public class LoginPage {
+public class LoginPage extends BaseClass {
 	WebDriver driver;
 	@BeforeMethod
 	public void setUp() throws Exception
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\neerajtesting\\git\\MyRepos\\Timesheet\\ChromeDriver2.36\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		driver.get("https://1wayit.mydsr.co.in/");
