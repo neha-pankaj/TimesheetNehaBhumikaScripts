@@ -2,3 +2,4 @@ src/timesheetauto/BaseClass.java
 test-output/
 seleniumdriver/
 test.txt
+.classpath
