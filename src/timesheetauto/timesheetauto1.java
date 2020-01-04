@@ -48,18 +48,18 @@ public class timesheetauto1 extends BaseClass {
 	    			  String val=driver.findElement(By.xpath("//*[@id='companyPhoneNumber']")).getAttribute("value");
 	    			  if(val.isEmpty())
 	    			  {
-	    				  driver.findElement(By.xpath("jhgjhjgj")).clear();
+	    				  driver.findElement(By.xpath("jhgjhjwedwdddgj")).clear();
 	    			  }
-	    			  System.out.println(val);
-	    			  System.out.println("try");
 	    			  Thread.sleep(5000);
 	    			  b=false;
-				} catch (Exception e) {
-					System.out.println("catch");
+	    			  
+	    		  	  }
+	    		  
+	    		  catch (Exception e) {
 					b=true;
 				}
 	    		  driver.findElement(By.xpath("//*[@id='companyPhoneNumber']")).sendKeys("gfsfs*&&");
-	    		  Assert.assertEquals(b, true);
+	    		  Assert.assertEquals(b, true,"Company phone input field is accepting only numeric");
 	}
 	@Test(enabled=false)
 	  public void VerifyCompanyProfileSaveButtonTest () {
