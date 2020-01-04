@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 
-public class timesheetauto1 extends BaseClass {
+public class CompanyProfilePage extends BaseClass {
 	WebDriver driver;
 	    @BeforeMethod
 	    public void verifyHomepageTitle() {
