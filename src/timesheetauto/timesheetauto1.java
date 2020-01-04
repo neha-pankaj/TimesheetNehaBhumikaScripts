@@ -24,7 +24,7 @@ public class timesheetauto1 extends BaseClass {
 	  }
 	String ErrorMsgCphone="Please enter a company Phone Number";
 	String ErrorMsgCName="Please enter your company name";
-	@Test
+	@Test(enabled=false)
 	  public void VerifyCompanyInfoMandatoryfield() {
 		driver.findElement(By.xpath("//*[@id='companyPhoneNumber']")).clear();
 		driver.findElement(By.xpath("//*[@id='submit']")).click();
@@ -39,7 +39,7 @@ public class timesheetauto1 extends BaseClass {
 		String ErrorMsgCName1=driver.findElement(By.xpath("//*[@id='CompanyInfo']/div[1]/div[1]/div/label[2]")).getText();
 		Assert.assertEquals(ErrorMsgCName1, ErrorMsgCName, "msg1");
 	}
-	@Test
+	@Test(enabled=false)
 	  public void VerifyCompanyInfoPhnumfield () {
 	      boolean b;
 	    		  try {
@@ -61,7 +61,7 @@ public class timesheetauto1 extends BaseClass {
 	    		  driver.findElement(By.xpath("//*[@id='companyPhoneNumber']")).sendKeys("gfsfs*&&");
 	    		  Assert.assertEquals(b, true);
 	}
-	@Test
+	@Test(enabled=false)
 	  public void VerifyCompanyProfileSaveButtonTest () {
 				driver.findElement(By.xpath("//*[@id='nav-profile-tab']")).click();
 				driver.findElement(By.xpath("//*[@id='submit']")).click();
@@ -72,9 +72,10 @@ public class timesheetauto1 extends BaseClass {
  }
 	@Test
 	  public void VerifyCompanyProfileCancelButtonTest() throws InterruptedException {
+		
 		driver.findElement(By.xpath("//*[@id='nav-profile-tab']")).click();
+		Thread.sleep (1000);
 		driver.findElement(By.xpath("//*[@id='AddressDetails']/div[3]/div[3]/div/div/a/input")).click();
-		Thread.sleep (3000);
 		String Companyprofilepage=driver.getTitle();
 		Assert.assertEquals(Companyprofilepage, "Company Profile");
 	}
