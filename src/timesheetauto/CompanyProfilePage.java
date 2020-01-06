@@ -7,7 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.testng.internal.BaseClassFinder;
 
 
 public class CompanyProfilePage extends BaseClass {
@@ -109,6 +108,7 @@ public class CompanyProfilePage extends BaseClass {
 		  
 		  System.out.println("close");
 		  driver.quit();
+		  System.out.println("test");
 	  }
 		
 		
