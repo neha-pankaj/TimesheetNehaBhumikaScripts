@@ -3,19 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="timesheetauto.CompanyProfilePage"/>
+      <class name="timesheetauto.LoginPage"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="timesheetauto.CompanyProfilePage">
+      <class name="timesheetauto.LoginPage">
         <methods>
-          <include name="VerifyCompanyProfileCancelButtonTest"/>
-          <include name="verifyHomepageTitle"/>
-          <include name="VerifyCompanyProfileZipCodefield"/>
+          <include name="homePageLoadTest"/>
+          <include name="setUp"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- timesheetauto.CompanyProfilePage -->
+      </class> <!-- timesheetauto.LoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
