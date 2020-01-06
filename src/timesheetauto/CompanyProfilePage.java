@@ -79,6 +79,29 @@ public class CompanyProfilePage extends BaseClass {
 		String Companyprofilepage=driver.getTitle();
 		Assert.assertEquals(Companyprofilepage, "Company Profile");
 	}
+	@Test
+	  public void VerifyCompanyProfileZipCodefield () {
+		 boolean b;
+		  try {
+		driver.findElement(By.xpath("//*[@id='nav-profile-tab']")).click();
+		driver.findElement(By.xpath("//*[@id='postalcode0']")).sendKeys("abcdfefg");
+		  String val=driver.findElement(By.xpath("//*[@id='postalcode0']")).getAttribute("value");
+		  if(val.isEmpty())
+		  {
+			  driver.findElement(By.xpath("jhgjhjwedwdddgj")).clear();
+		  }
+		  Thread.sleep(5000);
+		  b=false;
+	  	  }
+	  
+	  catch (Exception e) {
+		b=true;
+	}
+	  driver.findElement(By.xpath("//*[@id='postalcode0']")).sendKeys("gfsfs*&&");
+	  Assert.assertEquals(b, true,"Zip code input field is accepting only numeric");
+}
+	
+	
 	@AfterMethod
 	  public void Flush() {
 		  
